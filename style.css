@@ -31,6 +31,9 @@ body {
   background-color: var(--black);
 }
 
+.green {
+  color: var(--green);
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -54,7 +57,7 @@ nav {
 }
 
 .nav1 img {
-  height: 50px;
+  height: 55px;
 }
 
 .nav2 {
@@ -111,7 +114,7 @@ nav {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .section1 {
   display: flex;
@@ -126,4 +129,74 @@ main {
 
 .section1 .right {
   width: 45%;
+}
+
+.left h1 {
+  width: 13em;
+  font-size: 55px;
+}
+
+.left .tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  width: 30em;
+  font-size: 14px;
+  margin: 30px 0;
+}
+.left .tags h4 {
+  border-radius: 5px;
+  padding: 15px 28px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background-color: var(--gray);
+}
+
+.left h2 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.left h2 .lgray {
+  color: gray;
+  font-size: 24px;
+}
+
+.left h2 #gprice {
+  font-size: 40px;
+}
+.left h5 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.left h2 .gst {
+  font-size: 25px;
+}
+
+.left .button {
+  margin: 20px 0;
+}
+.left .button #buy {
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+  background-color: var(--green);
+  padding: 20px 80px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#buy:hover {
+  cursor: pointer;
+}
+
+.left .button #syllabus {
+  font-size: 30px;
+  background-color: var(--gray);
+  padding: 20px 60px;
+  border-radius: 5px;
+  border: none;
 }
