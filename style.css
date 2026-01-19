@@ -132,7 +132,7 @@ main {
 }
 
 .left h1 {
-  width: 13em;
+  width: 100%;
   font-size: 55px;
 }
 
@@ -199,4 +199,90 @@ main {
   padding: 20px 60px;
   border-radius: 5px;
   border: none;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.right .vid {
+  width: 100%;
+  height: 100%;
+}
+
+.right .tags2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
+  justify-content: space-around;
+  background-color: var(--gray);
+}
+
+.right .tags2 h4 {
+  margin: 10px;
+  height: max-content;
+  padding: 20px 25px;
+  border-radius: 5px;
+  white-space: nowrap;
+  width: 40%;
+  background-color: #1c1c1c;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .section1 .left h1 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .section1 {
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+
+  .section1 .left {
+    width: 100%;
+  }
+  .section1 .left h1 {
+    font-size: 33px;
+  }
+
+  .section1 .right {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section .left h1 {
+    font-size: 5vw;
+  }
+}
+
+.section2 {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section2 h1 {
+  font-family: hel;
+  font-size: 120px;
+  background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/bloomMask%20Large_lvwFbM14_l.png);
+  background-size: cover;
+  background-clip: text;
+  position: relative;
+  color: transparent;
+}
+
+.section2 h1.blur {
+  position: absolute;
+  filter: blur(80px);
 }
